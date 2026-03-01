@@ -1,0 +1,33 @@
+<div class="relative w-84.75 flex flex-col justify-center items-center gap-y-10 px-4 pt-8">
+    <div class="h-0.5 w-84.75 bg-grey"></div>
+    <div class="flex flex-col gap-y-4">
+        <include src="./components/skillCard.html" locals='{ 
+                "skillTitle": "Langages",
+                "skillList": ["C#", "Python", "JavaScript / TypeScript", "Java", "SQL", "Bash/Shell"]
+            }'>
+        </include>
+        <include src="./components/skillCard.html" locals='{ 
+                "skillTitle": "Backend",
+                "skillList": ["ASP.NET Core", "Flask", "FastAPI", "Node.js / Express.js", "Bun"]
+            }'>
+        </include>
+        <include src="./components/skillCard.html" locals='{ 
+                "skillTitle": "Frontend",
+                "skillList": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Zustand", "TanStack Query", "Zod", "PySide2"]
+            }'>
+        </include>
+        <include src="./components/skillCard.html"
+            locals='{ 
+                "skillTitle": "Base Données",
+                "skillList": ["PostgreSQL", "MySQL", "MongoDB"]
+            }'>
+        </include>
+        <include src="./components/skillCard.html"
+            locals='{ 
+                "skillTitle": "Devops & Outils",
+                "skillList": ["Git", "GitHub Actions (CI/CD)", "Docker", "Postman", "Jupyter Notebook"]
+            }'>
+        </include>
+    </div>
+    <div class="h-0.5 w-84.75 bg-grey"></div>
+</div>

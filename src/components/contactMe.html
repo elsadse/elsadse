@@ -1,0 +1,36 @@
+<div class="relative w-93.75 flex flex-col justify-center items-center bg-dark-grey gap-y-5 px-4 mt-8 py-7">
+    <form class="flex flex-col gap-y-12.5 mb-10">
+        <div class="flex flex-col gap-y-5">
+            <span class="text-preset-1 text-center">
+                Contact
+            </span>
+            <p class="text-preset-4 text-center text-grey">
+                Passionnée par le développement d'applications robustes et modernes, je suis ouverte à de nouvelles
+                collaborations. Contactez-moi
+            </p>
+        </div>
+        <div class="flex flex-col gap-y-8">
+            <input type="text" placeholder="NAME" name="name" required
+                class="border-b border-grey h-10.75 pb-4 pl-4 focus:outline-none placeholder:text-grey" />
+            <input type="email" placeholder="EMAIL" name="email" required
+                class="border-b border-grey h-10.75 pb-4 pl-4 focus:outline-none placeholder:text-grey" />
+            <textarea name="message" placeholder="MESSAGE" required
+                class="border-b border-grey h-26.75 pl-4 focus:outline-none placeholder:text-grey"></textarea>
+            <div class="flex justify-end">
+                <button class="w-22 flex flex-col gap-y-2.5 cursor-pointer">
+                    <p class="text-preset-3">
+                        ENVOYER
+                    </p>
+                    <div class="h-0.5 bg-green"></div>
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="h-0.5 w-85.75 bg-grey"></div>
+    <div class="w-43.5 flex justify-center">
+        <div class="w-38.5 flex flex-col items-center gap-y-5 p-4">
+            <include src="./components/socialNetworks.html"></include>
+        </div>
+    </div>
+    <img src="./../assets/images/ovals-right.svg" class="absolute top-108.5 right-46.5" alt=""/>
+</div>

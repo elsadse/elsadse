@@ -1,0 +1,26 @@
+<div class="w-84.75 flex flex-col justify-center items-center gap-y-8 px-4 pt-8">
+    <div class="relative flex flex-row gap-x-17.5">
+        <span class="text-preset-1">Projets</span>
+        <include src="./components/linkContact.html"></include>
+        <img src="./../assets/images/ovals-left.svg" class="absolute bottom-7 left-40" alt=""/>
+    </div>
+    <div class="grid grid-cols-1 gap-y-8">
+        <include src="./components/projectCard.html" locals='{ 
+                "projectImg": "./assets/images/bookmark-manager-app.svg",
+                "projectName": "GESTION DE FAVORIS",
+                "projetSkill": ["ASP.NET Core", "API REST", "React/TypeScript", "Zustand", "Zod", "Tailwind CSS", "PostgreSql", "GitHub Actions (CI/CD)", "Docker"],
+                "linkDemo":"https://elsadse.github.io/bookmark-manager-app/",
+                "linkCode":"https://github.com/elsadse/bookmark-manager-app"
+            }'>
+        </include>
+        <include src="./components/projectCard.html" locals='{ 
+                "projectImg": "./assets/images/weather-app.svg",
+                "projectName": "METEO",
+                "projetSkill": ["React/TypeScript", "Zustand", "Zod", "Tailwind CSS", "GitHub Actions (CI/CD)", "Docker"],
+                "linkDemo":"https://elsadse.github.io/weather-app/",
+                "linkCode":"https://github.com/elsadse/weather-app"
+            }'>
+        </include>
+    </div>
+</div>
+
