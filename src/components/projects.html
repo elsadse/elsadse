@@ -1,0 +1,28 @@
+<div class="w-85.75 flex flex-col justify-center items-center gap-y-8 px-4 pt-8
+            md:w-177 md:pt-15 xl:w-277.5 xl:gap-y-20"
+    >
+    <div class="relative w-85.75 md:w-177 xl:w-277.5 flex flex-row justify-between px-4">
+        <span class="text-preset-1 text-center">Projets</span>
+        <include src="./components/linkContact.html"></include>
+        <img src="./../assets/images/ovals-left.svg" class="absolute bottom-7 left-40 md:left-138 md:bottom-10 xl:left-290" alt=""/>
+    </div>
+    <div class="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-5.5 md:gap-y-15 xl:gap-x-7.5 xl:gap-y-17.25">
+        <include src="./components/projectCard.html" locals='{ 
+                "projectImg": "./assets/images/bookmark-manager-app.svg",
+                "projectName": "GESTION DE FAVORIS",
+                "projetSkill": ["ASP.NET Core", "API REST", "React/TypeScript", "Zustand", "Zod", "Tailwind CSS", "PostgreSql", "GitHub Actions (CI/CD)", "Docker"],
+                "linkDemo":"https://elsadse.github.io/bookmark-manager-app/",
+                "linkCode":"https://github.com/elsadse/bookmark-manager-app"
+            }'>
+        </include>
+        <include src="./components/projectCard.html" locals='{ 
+                "projectImg": "./assets/images/weather-app.svg",
+                "projectName": "METEO",
+                "projetSkill": ["React/TypeScript", "Zustand", "Zod", "Tailwind CSS", "GitHub Actions (CI/CD)", "Docker"],
+                "linkDemo":"https://elsadse.github.io/weather-app/",
+                "linkCode":"https://github.com/elsadse/weather-app"
+            }'>
+        </include>
+    </div>
+</div>
+

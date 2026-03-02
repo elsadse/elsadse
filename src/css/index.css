@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+@theme {
+  --color-white: #FFFFFF;
+  --color-grey: #d9d9d9;
+  --color-green: #4EE1A0;
+  --color-dark-grey: #242424;
+  --color-black: #191332;
+
+  --font-bold: "Space Grotesk";
+}
+
+@layer base {
+  body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  body {
+    @apply min-h-screen min-w-93.75 w-full flex flex-col items-center gap-y-5 overflow-x-hidden
+  }
+
+}
+
+@layer components {
+
+  .text-preset-1 {
+    font: bold;
+    font-family: var(--font-bold), serif;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+  }
+
+  .text-preset-2 {
+    font: bold;
+    font-family: var(--font-bold), serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+  }
+
+  .text-preset-3 {
+    font: bold;
+    font-family: var(--font-bold), serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+  }
+
+  .text-preset-4 {
+    font: medium;
+    font-family: var(--font-bold), serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+}
