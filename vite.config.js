@@ -4,6 +4,7 @@ import posthtml from '@vituum/vite-plugin-posthtml'
 import expressions from 'posthtml-expressions'
 
 export default defineConfig({
+  base:"/elsadse/",
   plugins: [
     tailwindcss(),  
     posthtml({
