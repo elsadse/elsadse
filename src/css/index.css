@@ -7,11 +7,11 @@
 }
 
 @theme {
-  --color-white: white;
-  --color-grey: grey;
-  --color-green: green;
+  --color-white: #FFFFFF;
+  --color-grey: #d9d9d9;
+  --color-green: #4EE1A0;
   --color-dark-grey: #242424;
-  --color-black: black;
+  --color-black: #191332;
 
   --font-bold: "Space Grotesk";
 }
@@ -23,8 +23,9 @@
   }
 
   body {
-    @apply min-h-screen place-items-center flex flex-col gap-y-5 mx-auto
+    @apply min-h-screen min-w-93.75 w-full flex flex-col items-center gap-y-5 overflow-x-hidden
   }
+
 }
 
 @layer components {
