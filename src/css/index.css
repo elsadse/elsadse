@@ -23,7 +23,7 @@
   }
 
   body {
-    @apply min-h-screen min-w-93.75 w-full flex flex-col items-center gap-y-5 overflow-x-hidden
+    @apply min-h-screen min-w-93.75 max-w-screen flex flex-col items-center gap-y-5 overflow-x-hidden
   }
 
 }
